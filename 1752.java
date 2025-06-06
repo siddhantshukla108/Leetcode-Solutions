@@ -1,3 +1,6 @@
+// LeetCode Problem 1752: Check if Array Is Sorted and Rotated
+
+
 
 //The approach:
 //1.Go through the array and find the point where nums[i] is greater than nums[i + 1]. This indicates a potential rotation point.
@@ -7,7 +10,7 @@
 //4.Lastly, make sure that the last element of the array is less than or equal to the first element.
 
 
-
+// 1st Approach: O(n) time complexity, O(1) space complexity
 
 class Solution {
     int rotation=0;
@@ -45,4 +48,27 @@ class Solution {
         }
     }
 
+}
+
+// 2nd Approach: O(n) time complexity, O(1) space complexity
+
+
+class Solution {
+    public boolean check(int[] nums) {
+        int count = 0;
+        int n = nums.length;
+
+        for (int i = 0; i < n; i++) {
+            // Use modulo to wrap around from last to first element
+            if (nums[i] > nums[(i + 1) % n]) {
+                count++;
+                // More than one drop => not valid
+                if (count > 1) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
 }
