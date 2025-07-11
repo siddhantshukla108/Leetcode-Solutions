@@ -1,4 +1,4 @@
-Leetcode solution 100:-
+// Leetcode solution 100:-
      
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
