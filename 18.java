@@ -1,4 +1,4 @@
-leetcode solution 
+leetcode solution 18
 import java.util.*;
 
 class Solution {
