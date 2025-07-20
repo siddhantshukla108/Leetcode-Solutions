@@ -1,4 +1,4 @@
-leetcode solution 
+new leetcode solution 
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
