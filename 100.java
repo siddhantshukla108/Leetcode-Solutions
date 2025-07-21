@@ -1,5 +1,5 @@
 // Leetcode solution 100:-
-     
+     new solution 
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         // Both trees are empty
